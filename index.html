@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...your-integrity-hash...=" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="folio.css">
     <script src="script.js"></script>
-    <title>Responsive Navbar</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <nav class="navbar">
@@ -13,11 +16,11 @@
             <a href="#">SANATH</a>
         </div>
         <ul class="nav-links" id="navLinks">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><button><a href="#">Contact</a></button></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#about">projects</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#contact" class="cta">Contact</a></li>
         </ul>
         
         <div class="burger" onclick="toggleMenu()">
@@ -26,28 +29,10 @@
             <div class="line3"></div>
         </div>
     </nav>
-    <script>
-        
-        function toggleMenu() {
-    const navLinks = document.getElementById("navLinks");
-    navLinks.classList.toggle("active");
-}
-window.addEventListener('load', function () {
-    // Array of colorful background options
-    const colors = ['#FF5733', '#33FF57', '#5733FF', '#33A6FF', '#FF33A6', '#ef584d',];
-    
-    // Get a random color from the array
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-
-    // Apply the random color to the body background
-    document.body.style.backgroundColor = randomColor;
-});
-
-
-    </script>
-<div class="main">
+   
+<div class="main" id="About">
     <div class="left1">
-        <h1>I'm Nothing </h1>
+        <h1 class="h">I'm Nothing </h1>
         <p class="ssk">This website can be consist of real and genuie 
             information about the sanath kumar. Hi!
             every one I am currently pursuing my  
@@ -72,10 +57,10 @@ window.addEventListener('load', function () {
             <h1 class="num">My Projects</h1>
             
             <p class="g">This webpage consists of my projects which I have developed until now.</p>
-            <h3>QR Code Generator</h3>
+            <h3 class="g2">QR Code Generator</h3>
             <p class="m">This is my first website, which I have built based on the QR code generator. Click on the "Qr code" link below to visit the website.</p>
             <a href="https://qrscannersa.netlify.app/" id="p">Qr code</a>
-            <h3>Read Free</h3>
+            <h3 class="g2">Read Free</h3>
             <p class="m">This is my second website. The major purpose of this website is to read stories without any interruptions, and it consists of Telugu, Hindi, and English stories.</p>
             <a href="https://storiesread.netlify.app/" id="p">Read Free</a>
         </div>
@@ -85,9 +70,104 @@ window.addEventListener('load', function () {
     </div>
 </div>
 
+<!-- skills section  -->
+<div id="skills">
+    <div class="main3">
+        <h2 class="h2">My Skills</h2>
+        <div class="skill">
+            <div class="skill-item">
+                <h4>C</h4>
+                <div class="circle">
+                    <div class="percentage" id="python-percentage">20%</div>
+                </div>
+            </div>
+            <!-- Add more skill items as needed -->
+            <div class="skill-item">
+                <h4>JAVA</h4>
+                <div class="circle">
+                    <div class="percentage" id="python-percentage">50%</div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h4>PYTHON</h4>
+                <div class="circle">
+                    <div class="percentage" id="python-percentage">35%</div>
+                </div>
+            </div>
+             <div class="skill-item">
+                <h4>Node js</h4>
+                <div class="circle">
+                    <div class="percentage" id="python-percentage">10%</div>
+                </div>
+            </div> 
+        </div>
+        <div class="skills1">
+        <div class="skill-item">
+            <h4>HTML</h4>
+            <div class="circle">
+                <div class="percentage" id="python-percentage">60%</div>
+            </div>
+        </div>
+        <div class="skill-item">
+            <h4>CSS</h4>
+            <div class="circle">
+                <div class="percentage" id="python-percentage">50%</div>
+            </div>
+        </div>
+        <div class="skill-item">
+            <h4>Java script </h4>
+            <div class="circle">
+                <div class="percentage" id="python-percentage">20%</div>
+            </div>
+        </div>
+        <div class="skill-item">
+            <h4>Boot Strap</h4>
+            <div class="circle">
+                <div class="percentage" id="python-percentage">50%</div>
+            </div>
+        </div>
+        
+        </div>
+        
+    </div>
+    
+</div>
+
+<footer>
+    <div class="contact-container" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <h3><i class="fas fa-user"></i> Sriram Sanath Kumar</h3>
+        <p><i class="fas fa-map-marker-alt"></i>L.R. Palli,Atmakur,Nellore(D.T)</p>
+        <p><i class="fas fa-phone"></i> 9848239193</p>
+        <p><i class="fas fa-envelope"></i> Email: kirack123@gmail.com</p>
+        <div class="social-media">
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com/@Telusko/featured" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+        
+    function toggleMenu() {
+const navLinks = document.getElementById("navLinks");
+navLinks.classList.toggle("active");
+}
+window.addEventListener('load', function () {
+// Array of colorful background options
+const colors = ['#97caef', '#d79922', '#edf5e1', '#5CDB95', '#659DBD','#C38D9E','#85DCB','#84ceeb','#c1c8e4',];
+
+// Get a random color from the array
+const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+// Apply the random color to the body background
+document.body.style.backgroundColor = randomColor;
+});
 
 
-
-
+</script>
 </body>
 </html>

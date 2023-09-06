@@ -1,4 +1,11 @@
 /* Reset some default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
 body, ul {
     margin: 0;
     padding: 0;
@@ -17,6 +24,7 @@ body, ul {
 }
 .logo a {
     text-decoration: none;
+    
     color:#092050;
     font-size: 35px;
     font-weight: bold;
@@ -36,9 +44,20 @@ body, ul {
     text-decoration: none;
     
     color:#092050;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     transition: all .3s ease;
+}
+.cta{
+    padding: 12px 14px;
+     cursor:pointer;
+     background: #ef584d;
+     outline: none;
+     border: none;
+      color: #fff;
+     border-radius: 2px;
+     margin-left: 10px;
+     box-shadow: 0 4px 8px 0 rgb(0, 0, 0,0.2), 0 6px 20px 0 rgb(0, 0 ,0,0.19);
 }
 
 /* Mobile menu styles */
@@ -67,7 +86,7 @@ body, ul {
         width: 100%;
         background-color:#fff;
         position: absolute;
-        top: 80px;
+        top: 90px;
         left: 0px;
     }
 
@@ -75,7 +94,7 @@ body, ul {
         display: flex;
     }
     .nav-links a{
-        font-size: 18px;
+        font-size: 20px;
     }
     .nav-links a:hover {
         background-color: #e0e4ef;
@@ -84,7 +103,7 @@ body, ul {
         text-align: center;
     }
     .nav-links li {
-        margin: 8px 0;
+        margin: 20px 0;
     }
 }
 /* port */
@@ -101,15 +120,16 @@ body, ul {
     padding: 20px;
    max-height: 50%;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   
 }
 h1{
     text-align: center;
     font-size: 50px;
     margin-top: 50px;
-    
 }
-
+.h{
+    color: #8ee4af;
+}
 .ssk{
     font-size: 20px;
     line-height: -800px;
@@ -148,11 +168,11 @@ h1{
         padding: 20px;
        max-height: 100%;
         border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        
     }
     h1{
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
         
     }
     .right {
@@ -174,6 +194,7 @@ h1{
     text-decoration: none;
     border-radius: 9px;
     font-size: 18px;
+    text-align: center;
 }
     .main {
         flex-direction: column;
@@ -185,8 +206,9 @@ h1{
 
 /* Add more responsive styles as needed */
 .about-container {
-    background-color: #f0f0f0;
+   
     padding: 20px;
+    background:#d1e8e2;
    
 }
 
@@ -200,9 +222,9 @@ h1{
   
     flex: 1;
     padding: 20px;
-    background-color: #fff;
+   
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
 }
 
 .right {
@@ -214,7 +236,7 @@ h1{
 .num {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #092050;
+    color: #116466;
 }
 
 .h1 {
@@ -233,6 +255,13 @@ h1{
     margin-left: 45%;
     font-size: 30px;
     
+}
+.g2 {
+    color: #5680e9;
+}
+#p:hover{
+    text-decoration: dashed;
+    color: #659dbd;
 }
 h3{
     text-align: center;
@@ -353,3 +382,123 @@ h3{
 }
 
 /* Add more media queries and adjust styles as needed */
+/* skills section css */
+#skills {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+   
+
+}
+.skills1 {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.main3 {
+    
+    padding: 20px;
+    border-radius: 10px;
+    
+    display: inline-block;
+}
+
+.h2 {
+    color:#8860d0;
+    font-size: 30px;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill-item {
+    text-align: center;
+    margin: 10px;
+}
+
+h4 {
+    font-size: 18px;
+    color: #5680e9;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .circle {
+        width: 80px;
+        height: 80px;
+        font-size: 18px;
+    }
+}
+/* contact section  */
+footer {
+    background-color: #edf5e1;
+    padding: 40px;
+    text-align: center;
+    color: #555;
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #84ceeb; 
+}
+  
+  .contact-info {
+    margin-bottom: 30px;
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  
+  p {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 30px;
+    font-size: 30px;
+    color: #555;
+  }
+  
+  .social-media a:hover {
+    color: #333;
+  }
+
+  h1 {
+    color:orchid;
+  }
+
+  p {
+    color: #555;
+  }
