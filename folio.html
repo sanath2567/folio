@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="folio.css">
+    <script src="script.js"></script>
+    <title>Responsive Navbar</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">SANATH</a>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><button><a href="#">Contact</a></button></li>
+        </ul>
+        
+        <div class="burger" onclick="toggleMenu()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <script>
+        
+        function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+}
+window.addEventListener('load', function () {
+    // Array of colorful background options
+    const colors = ['#FF5733', '#33FF57', '#5733FF', '#33A6FF', '#FF33A6', '#ef584d',];
+    
+    // Get a random color from the array
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+    // Apply the random color to the body background
+    document.body.style.backgroundColor = randomColor;
+});
+
+
+    </script>
+<div class="main">
+    <div class="left1">
+        <h1>I'm Nothing </h1>
+        <p class="ssk">This website can be consist of real and genuie 
+            information about the sanath kumar. Hi!
+            every one I am currently pursuing my  
+                B.Tech second year in the stream of 
+            computer science and enginnering. This portfolio can be consist of complete information about my skills which I have learn till now. During my B.Tech course I was done some project
+        related to web development built my web development.I was provided my number in the 
+    the contact section I any Queries please contact me.</p>
+    <a href="thumbnail (1).pdf" download class="sum">Download Resume</a>
+    </div>
+    <div class="right">
+        <div class="image">
+            <img src="sanath (2).jpg" alt="loading---" style="border-radius: 80%;">
+        </div>
+       
+    </div>
+</div>
+
+<div class="about-container" id="about">
+    <div class="main1">
+        
+        <div class="left">
+            <h1 class="num">My Projects</h1>
+            
+            <p class="g">This webpage consists of my projects which I have developed until now.</p>
+            <h3>QR Code Generator</h3>
+            <p class="m">This is my first website, which I have built based on the QR code generator. Click on the "Qr code" link below to visit the website.</p>
+            <a href="https://qrscannersa.netlify.app/" id="p">Qr code</a>
+            <h3>Read Free</h3>
+            <p class="m">This is my second website. The major purpose of this website is to read stories without any interruptions, and it consists of Telugu, Hindi, and English stories.</p>
+            <a href="https://storiesread.netlify.app/" id="p">Read Free</a>
+        </div>
+        <div class="right">
+            <p></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
