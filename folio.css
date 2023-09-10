@@ -136,7 +136,9 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     margin-top: 50px;
 }
-
+.srk{
+    display: none;
+}
 .right {
     flex: 1;
     text-align: center;
@@ -162,6 +164,7 @@ h1{
     
 }
 
+
 @media screen and (max-width: 768px) {
     .left1 {
         flex: 1;
@@ -169,6 +172,15 @@ h1{
        max-height: 100%;
         border-radius: 5px;
         
+    }
+    .srk{
+        display: block;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    .ssk{
+        display: none;
+
     }
     h1{
         text-align: center;
@@ -333,7 +345,7 @@ h3{
         line-height: 30px;
     }
     #p{
-        margin-left: 30%;
+        margin-left: 40%;
         
     }
    
@@ -383,7 +395,9 @@ h3{
         font-size: 14px;
     }
     #p{
-        margin-left: 40px;
+        margin-left: 60px;
+        font-size: 30px;
+
     }
     .main1 {
         flex-direction: column;
@@ -393,7 +407,7 @@ h3{
 
 
 #skills-section {
-    background-color: #f0f0f0;
+    background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -403,14 +417,18 @@ h3{
         .ee{
             font-size: 40px;
             font-family: 'Times New Roman', Times, serif;
-            color: #116466;
+              color: #5680e9;
            margin-top: -400px;
-           transform: translateX(700px);
+         transform: translatex(700px);
+         margin-bottom: 90px;
+         
+         
             
         }
      #skills-section h2{
-        font-size: 26px;
-        color: #8ee4af;
+        font-size: 28px;
+       color: #5680e9;
+       margin-top: 30px;
      }
         .skill-item {
             flex: 1;
@@ -506,4 +524,13 @@ footer {
   }
   span{
     color: #6b6e70;
+  }
+  .sss{
+    transform: translateX(-20px);
+    transform: translateY(-30px);
+    font-size: 50px;
+  }
+  .sp{
+    margin-left: 25px;
+    
   }

@@ -1,22 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const skillElements = document.querySelectorAll(".circle");
+// toogle menu
 
-    skillElements.forEach((element) => {
-        const percentage = parseFloat(element.textContent);
-        updateCircleColor(element, percentage);
-    });
-});
-
-function updateCircleColor(element, percentage) {
-    let color = "orange"; // Default color
-
-    if (percentage < 25) {
-        color = "red";
-    } else if (percentage < 50) {
-        color = "orange";
-    } else if (percentage < 75) {
-        color = "Green";
+// Function to toggle dark mode
+function toggleDarkMode() {
+    // Toggle the "dark-mode" class on the body
+    document.body.classList.toggle('dark-mode');
+    
+    // Toggle the "dark-mode" class on the navbar (if needed)
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        navbar.classList.toggle('dark-mode');
     }
-
-    element.style.backgroundColor = color;
 }
+
+// Add a click event listener to the dark mode toggle anchor tag
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+if (darkModeToggle) {
+    darkModeToggle.addEventListener('click', toggleDarkMode);
+}
+
