@@ -447,7 +447,11 @@ h3{
             margin-top: 10px;
             font-size: 20px;
         }
-
+        @media screen and (max-width: 992px) {
+           .ee{
+            display: none;
+           }
+        }
         /* Media query for screens smaller than 768px */
         @media screen and (max-width: 768px) {
             .skill-item {
