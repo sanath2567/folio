@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Section</title>
+    <style>
+        /* Common styles for all screen sizes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        #skills-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .skill-item {
+            flex: 1;
+            text-align: center;
+            margin: 100px;
+            padding: 10px;
+        }
+
+        .skill-image {
+            max-width: 200px;
+            max-height: 200px;
+            height: auto;
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        /* Media query for screens smaller than 768px */
+        @media screen and (max-width: 768px) {
+            .skill-item {
+                flex-basis: calc(50% - 20px);
+                margin: 5px;
+            }
+        }
+
+        /* Media query for screens smaller than 576px */
+        @media screen and (max-width: 576px) {
+            .skill-item {
+                flex-basis: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="skills-section">
+        <div class="skill-item">
+            <img class="skill-image" src="Python-Symbol-700x394.png" alt="Skill 1">
+            <h2>Intermediate</h2>
+        </div>
+        <div class="skill-item">
+            <img class="skill-image" src="240-2409409_c-programming-icon-c-programming-language-icon.png" alt="Skill 2">
+            <h2>Basic</h2>
+        </div>
+        <div class="skill-item">
+            <img class="skill-image" src="6242699_language-icon-java-logo-transparent-png.png" alt="Skill 3">
+            <h2>Intermediate</h2>
+        </div>
+        <!-- Add more skill items as needed -->
+        <div class="skill-item">
+            <img class="skill-image" src="htmlcss.png" alt="Skill 2">
+            <h2>ADvance</h2>
+        </div>
+        
+        <div class="skill-item">
+            <img class="skill-image" src="javascript-logo-hq-png-1.png" alt="Skill 2">
+            <h2>Basic</h2>
+        </div>
+        <div class="skill-item">
+            <img class="skill-image" src="logo-mysql-part-azure-sql-database-with-azure-active-directory-17.png" alt="Skill 3">
+            <h2>Basic</h2>
+        </div>
+        <div class="skill-item">
+            <img class="skill-image" src="bootstrap-logo-png--600 (1).png" alt="Skill 3">
+            <h2>Intermediate</h2>
+        </div>
+    </div>
+
+    <script>
+        // Optional JavaScript code can be added here for interactivity or dynamic behavior.
+    </script>
+</body>
+</html>
