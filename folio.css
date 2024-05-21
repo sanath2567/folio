@@ -135,9 +135,11 @@ h1{
     line-height: -800px;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 50px;
+    text-align: justify;
 }
 .srk{
     display: none;
+    text-align: justify;
 }
 .right {
     flex: 1;
